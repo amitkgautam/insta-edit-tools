@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portal - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="flower-container">
+        <div class="flower">🌸</div>
+        <div class="flower">🌸</div>
+        <div class="flower">🏵️</div>
+        <div class="flower">🌸</div>
+        <div class="flower">🌺</div>
+        <div class="flower">🌸</div>
+    </div>
+
+    <div class="login-container">
+        <div class="login-card">
+            <div class="portal-logo">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h2>Welcome Portal</h2>
+            <p>Sign in with your Google Account to access your personal dashboard.</p>
+            
+            <button id="google-login-btn" class="btn btn-google">
+                <i class="fa-brands fa-google"></i> Continue with Google
+            </button>
+            
+            <div id="error-message" class="error-msg" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script type="module" src="js/auth.js"></script>
+</body>
+</html>
