@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Audit Logs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="admin-body">
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fa-solid fa-shield-halved"></i> <span>Security Audit Logs</span>
+        </div>
+        <div>
+            <a href="dashboard.html" class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-left"></i> Dashboard</a>
+            <button id="logout-btn" class="btn btn-sm btn-danger">Logout</button>
+        </div>
+    </nav>
+
+    <main class="admin-container">
+        <h2>Collected User Analytics & Sessions</h2>
+        <p>Real-time updates directly connected to Firebase Firestore security logs.</p>
+
+        <div class="table-responsive">
+            <table class="audit-table">
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Email / UID</th>
+                        <th>Login Activity Timestamp</th>
+                        <th>Device & OS Info</th>
+                        <th>Location & Network Meta</th>
+                    </tr>
+                </thead>
+                <tbody id="audit-logs-tbody">
+                    <tr>
+                        <td colspan="5" style="text-align: center; padding: 2rem;">Loading security data records...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script type="module" src="js/admin.js"></script>
+</body>
+</html>
