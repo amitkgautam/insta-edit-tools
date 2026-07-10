@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard-body">
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fa-solid fa-cubes"></i> <span>MyPortal</span>
+        </div>
+        <div class="user-profile-nav" id="user-profile-summary">
+            <img id="nav-avatar" src="" alt="Avatar" class="avatar-sm" style="display:none;">
+            <span id="nav-username">Loading...</span>
+            <button id="admin-panel-btn" class="btn btn-sm btn-outline" style="display: none;">
+                <i class="fa-solid fa-lock"></i> Admin
+            </button>
+            <button id="logout-btn" class="btn btn-sm btn-danger">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+            </button>
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+        <header class="welcome-header">
+            <h1 id="welcome-title">Hello!</h1>
+            <p id="user-email-subtitle"></p>
+        </header>
+
+        <div class="grid-container" id="cards-grid">
+            </div>
+    </main>
+
+    <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
