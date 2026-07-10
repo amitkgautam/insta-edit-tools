@@ -5,12 +5,12 @@ import { getFirestore, doc, setDoc, collection, getDocs, serverTimestamp } from 
 
 // 🧩 PASTE YOUR FIREBASE WEB APP CONFIGURATION OBJECT BLOCKS HERE
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyCaQSOmCJK5Wr44ZWpWTIx9sEheqPDrU0Y",
+    authDomain: "insta-web-portal.firebaseapp.com",
+    projectId: "insta-web-portal",
+    storageBucket: "insta-web-portal.firebasestorage.app",
+    messagingSenderId: "1006909329862",
+    appId: "1:1006909329862:web:9a6c30ca1f2125b12862c7"
 };
 
 // Initialize Instance Connections
